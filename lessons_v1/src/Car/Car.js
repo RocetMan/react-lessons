@@ -26,7 +26,12 @@ const Car = (props) => {
       }>
         <p>Car name: <b>{props.name}</b></p>
         <p>Car year: <b>{props.year}</b></p>
-        <input type="text" onChange={props.changeName} value={props.name} className={className.join(' ')}/>
+        <input
+            type="text"
+            onChange={props.changeName}
+            value={props.name}
+            className={className.join(' ')}
+        />
         <button onClick={props.deleteItem}>Delete this item</button>
 
       </div>
