@@ -7,8 +7,8 @@ class App extends Component {
 
    cars: [
      {name: 'ford', year: 2018},
-     {name: 'Audi', year: 2016},
-     {name: 'Mazda', year: 2015},
+     // {name: 'Audi', year: 2016},
+     // {name: 'Mazda', year: 2015},
    ],
 
    pageTitle: 'React components',
@@ -46,8 +46,18 @@ class App extends Component {
  };
 
 
-  render() {
+ componentWillMount() {
+   console.log('componentWillMount')
+ }
 
+ componentDidMount() {
+   console.log('componentDidMount')
+ }
+
+
+
+  render() {
+    console.log('render');
     const divStyle ={
       textAlign: "center"
     };

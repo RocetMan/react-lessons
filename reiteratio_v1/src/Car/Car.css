@@ -1,0 +1,10 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.error{
+    border: 1px solid green;
+}
+.valid{
+    border: 1px solid red;
+}
